@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- versión con paleta, marcos y texturas derivados de label_front_clean.png / label_back_clean.png -->
+  <title>OZOTERRA – Aceite Vegetal Ozonizado | Bioestimulante Agrícola</title>
+  <meta name="description" content="OZOTERRA: Bioestimulante agrícola a base de aceites vegetales ozonizados desarrollado con tecnología limpia por SPEAL S.A.S. Contribuye al vigor vegetal y al desarrollo del cultivo.">
+  <meta name="keywords" content="Ozoterra, Aceite vegetal ozonizado, bioestimulante agrícola, tecnología limpia, agro Colombia, SPEAL SAS, nutrición vegetal, vigor radicular">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23164028'/><path d='M50 20 C65 35 75 55 50 80 C25 55 35 35 50 20 Z' fill='%23c7a753'/></svg>">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet (v2 — paleta y formas alineadas a la etiqueta oficial) -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Barra Superior Institucional -->
+  <div class="top-notice-bar">
+    <div class="notice-inner">
+      <span class="pill-tag">Muestra de Evaluación</span>
+      <span class="notice-text">Producto en validación • Prohibida su venta • Uso Exclusivo Agrícola</span>
+      <span class="notice-divider">|</span>
+      <span class="notice-contact"><strong>Atención al cliente:</strong> +57 316 878 7885</span>
+    </div>
+  </div>
+
+  <!-- Encabezado / Barra de Navegación -->
+  <header class="header-main" id="headerMain">
+    <div class="container header-container">
+      
+      <!-- Logotipo OZOTERRA -->
+      <a href="#inicio" class="brand-logo" aria-label="Ir al inicio de OZOTERRA">
+        <div class="brand-title-wrap">
+          <svg class="brand-icon-leaf" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C7.5 7 5 11 5 15C5 18.87 8.13 22 12 22C15.87 22 19 18.87 19 15C19 11 16.5 7 12 2Z" fill="#164028"/>
+            <path d="M12 22V10M12 14L16 11M12 18L8 15" stroke="#c7a753" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-name">OZO<span>TERRA</span></span>
+        </div>
+        <span class="brand-tagline">Aceite Vegetal Ozonizado</span>
+      </a>
+
+      <!-- Menú de Navegación -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+        <li><a href="#modo-de-uso" class="nav-link">Modo de Uso</a></li>
+        <li><a href="#presentacion" class="nav-link">Presentación</a></li>
+        <li><a href="#precauciones" class="nav-link">Precauciones</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+
+      <!-- Botón Rápido WhatsApp en Header -->
+      <div class="header-actions">
+        <a href="https://wa.me/573168787885?text=Hola,%20solicito%20informaci%C3%B3n%20comercial%20y%20t%C3%A9cnica%20sobre%20OZOTERRA%20Aceite%20Vegetal%20Ozonizado." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-header-wa" 
+           title="Atención inmediata vía WhatsApp">
+          <svg viewBox="0 0 24 24">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.73C7 10.96 7.9 12.14 8.02 12.31C8.15 12.47 9.77 15.08 12.32 16.12C14.44 16.99 14.87 16.82 15.33 16.78C15.79 16.73 16.81 16.17 17.02 15.58C17.23 14.99 17.23 14.49 17.16 14.38C17.1 14.28 16.93 14.22 16.68 14.1C16.43 13.97 15.2 13.37 14.97 13.29C14.74 13.2 14.58 13.16 14.41 13.41C14.25 13.66 13.78 14.22 13.64 14.38C13.5 14.54 13.36 14.56 13.11 14.44C12.86 14.31 12.06 14.05 11.11 13.2C10.37 12.54 9.87 11.73 9.73 11.48C9.58 11.23 9.71 11.1 9.84 10.97C9.95 10.86 10.09 10.68 10.21 10.53C10.34 10.39 10.38 10.28 10.46 10.12C10.54 9.95 10.5 9.81 10.44 9.69C10.38 9.56 9.88 8.35 9.67 7.85C9.47 7.37 9.27 7.43 9.12 7.42C8.97 7.42 8.81 7.33 8.53 7.33Z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <!-- Botón Móvil -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Sección Hero Principal
+       ========================================================================== -->
+  <section class="hero-section" id="inicio">
+    <img src="assets/img/hero_landscape.jpg" alt="Campo agrícola colombiano tecnificado" class="hero-landscape-bg" loading="lazy">
+    
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Contenido Hero -->
+        <div class="hero-text-content">
+          
+          <div class="hero-badge-wrap">
+            <span class="hero-badge-dot"></span>
+            <span class="hero-badge-text">Tecnología de Ozono para el Campo</span>
+          </div>
+
+          <h1 class="hero-title">OZOTERRA</h1>
+          <h2 class="hero-subtitle">Aceite Vegetal Ozonizado</h2>
+
+          <p class="hero-description">
+            Bioestimulante agrícola elaborado a partir de aceites vegetales ozonizados y formulado con tecnología limpia. Contribuye al vigor de sus plantas, optimiza su respuesta fisiológica, favorece el desarrollo integral del cultivo y promueve una agricultura más limpia y sostenible.
+          </p>
+
+          <!-- Badges de Especificación Rápida -->
+          <div class="hero-badges-strip">
+            <div class="spec-pill">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>Concentrado Oleoso</span>
+            </div>
+            <div class="spec-pill">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+              <span>Contenido Neto: 250 mL</span>
+            </div>
+            <div class="spec-pill">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              <span>Hecho en Colombia • SPEAL S.A.S.</span>
+            </div>
+          </div>
+
+          <!-- Botones de Acción Hero -->
+          <div class="hero-cta-group">
+            <a href="https://wa.me/573168787885?text=Hola,%20estoy%20interesado%20en%20conocer%20m%C3%A1s%20detalles%20y%20precios%20de%20OZOTERRA%20Aceite%20Vegetal%20Ozonizado." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-wa-primary" 
+               id="btnHeroWhatsapp">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.73C7 10.96 7.9 12.14 8.02 12.31C8.15 12.47 9.77 15.08 12.32 16.12C14.44 16.99 14.87 16.82 15.33 16.78C15.79 16.73 16.81 16.17 17.02 15.58C17.23 14.99 17.23 14.49 17.16 14.38C17.1 14.28 16.93 14.22 16.68 14.1C16.43 13.97 15.2 13.37 14.97 13.29C14.74 13.2 14.58 13.16 14.41 13.41C14.25 13.66 13.78 14.22 13.64 14.38C13.5 14.54 13.36 14.56 13.11 14.44C12.86 14.31 12.06 14.05 11.11 13.2C10.37 12.54 9.87 11.73 9.73 11.48C9.58 11.23 9.71 11.1 9.84 10.97C9.95 10.86 10.09 10.68 10.21 10.53C10.34 10.39 10.38 10.28 10.46 10.12C10.54 9.95 10.5 9.81 10.44 9.69C10.38 9.56 9.88 8.35 9.67 7.85C9.47 7.37 9.27 7.43 9.12 7.42C8.97 7.42 8.81 7.33 8.53 7.33Z"/>
+              </svg>
+              <span>Consultar por WhatsApp</span>
+            </a>
+
+            <a href="#modo-de-uso" class="btn-secondary-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              <span>Ver Modo de Preparación</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-note">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <span>Información técnica respaldada por la Ficha Técnica oficial del fabricante SPEAL S.A.S.</span>
+          </div>
+
+        </div>
+
+        <!-- Columna Visual del Producto -->
+        <div class="hero-visual-column">
+          <div class="bottle-stage">
+            <div class="bottle-glow-halo"></div>
+
+            <!-- Micro-card flotante superior -->
+            <div class="float-card pos-top-left">
+              <div class="float-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+              </div>
+              <div class="float-card-content">
+                <h5>Tecnología Limpia</h5>
+                <p>100% Grado Agrícola</p>
+              </div>
+            </div>
+
+            <!-- Imagen Principal del Producto (Mockup Alta Resolución) -->
+            <img src="assets/img/ozoterra_bottle_250ml_front.png"
+                 alt="Envase real de OZOTERRA Aceite Vegetal Ozonizado 250 mL"
+                 class="bottle-main-img"
+                 id="heroBottleImg">
+
+            <!-- Micro-card flotante inferior -->
+            <div class="float-card pos-bottom-right">
+              <div class="float-card-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.5h-2v-2h2zm0-4h-2V7h2z"/></svg>
+              </div>
+              <div class="float-card-content">
+                <h5>Dosis: 5 mL / Litro</h5>
+                <p>1 L de Ozoterra x 200 L Agua</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selector de Vista del Envase -->
+          <div class="bottle-controls" role="group" aria-label="Cambiar vista del envase">
+            <button class="btn-bottle-toggle active" id="heroFrontBtn">Vista Frontal</button>
+            <button class="btn-bottle-toggle" id="heroBackBtn">Vista Técnica (Reverso)</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Sección de Características y Beneficios
+       ========================================================================== -->
+  <section class="section-pad section-bg-yellow" id="beneficios">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">Innovación y Vigor Vegetal</span>
+        <h2 class="section-title">Características y Beneficios Comprobados</h2>
+        <p class="section-lead">
+          OZOTERRA combina el potencial de los aceites vegetales poliinsaturados ozonizados con agentes coadyuvantes naturales para optimizar el equilibrio biológico y fisiológico del cultivo.
+        </p>
+      </div>
+
+      <!-- 4 Pilares Fundamentales (Etiqueta Frontal) -->
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.55.06-1.09.18-1.61.94.39 2 .61 3.12.61 3.01 0 5.62-1.74 6.87-4.27 1.54 1.34 2.83 3.04 3.73 4.97-.61.19-1.25.3-1.9.3-3.86 0-7 3.14-7 7 0 .34.03.67.08 1z"/></svg>
+          </div>
+          <h3>Suelos Más Vivos</h3>
+          <p>Favorece la actividad y salud biológica en la zona radicular, propiciando un entorno fértil y equilibrado para el cultivo.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3zm0 4.8l4 3.6V18h-2v-6H10v6H8v-6.6l4-3.6z"/></svg>
+          </div>
+          <h3>Cultivos Más Fuertes</h3>
+          <p>Contribuye activamente a una mejor respuesta fisiológica frente a factores de estrés ambiental, mejorando el vigor vegetativo.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <h3>Mayor Rendimiento</h3>
+          <p>Estimula el aprovechamiento eficiente y la asimilación armónica de los nutrientes disponibles durante las fases de desarrollo.</p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon-box">
+            <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+          </div>
+          <h3>Agricultura Sostenible</h3>
+          <p>Formulación con tecnología limpia que respeta los procesos naturales del agro, promoviendo una producción más limpia y responsable.</p>
+        </div>
+
+      </div>
+
+      <!-- Beneficios Detallados + Ingredientes Oficiales -->
+      <div class="benefits-composite">
+        
+        <!-- Lista de Beneficios Verificables -->
+        <div class="benefits-col-main">
+          <h3 class="benefits-col-title">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Acción Integral en la Planta</span>
+          </h3>
+
+          <ul class="benefits-list">
+            <li class="benefit-item">
+              <div class="benefit-check">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Estimula el desarrollo y vigor del cultivo</h4>
+                <p>Acelera la respuesta vegetativa y fortalece la estructura aérea en etapas clave de crecimiento.</p>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-check">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Favorece la salud y actividad radicular</h4>
+                <p>Mejora la emisión y vigor de pelos absorbentes y raíces secundarias para un anclaje óptimo.</p>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-check">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Contribuye a una mejor respuesta fisiológica frente al estrés</h4>
+                <p>Brinda soporte metabólico ante choques térmicos, fluctuaciones hídricas y condiciones desfavorables.</p>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-check">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Apoya el aprovechamiento de nutrientes</h4>
+                <p>Potencia la eficacia de los planes de fertilización edáfica y nutrición foliar implementados.</p>
+              </div>
+            </li>
+
+            <li class="benefit-item">
+              <div class="benefit-check">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              </div>
+              <div class="benefit-item-content">
+                <h4>Promueve una agricultura más limpia y sostenible</h4>
+                <p>Componentes seguros y biodegradables sin generar residuos agresivos en los campos ni cosechas.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Caja de Ingredientes de la Etiqueta -->
+        <div class="ingredients-box">
+          <div>
+            <h3 class="ingredients-title">Composición e Ingredientes</h3>
+            <p class="ingredients-subtitle">Formulación balanceada bajo estándares de tecnología limpia</p>
+
+            <ul class="ingredients-list">
+              <li class="ingredient-item">
+                <span class="ingredient-dot"></span>
+                <span>Aceites vegetales poliinsaturados ozonizados</span>
+              </li>
+              <li class="ingredient-item">
+                <span class="ingredient-dot"></span>
+                <span>Jabón potásico</span>
+              </li>
+              <li class="ingredient-item">
+                <span class="ingredient-dot"></span>
+                <span>Emulsificantes, adherentes y coadyuvantes</span>
+              </li>
+              <li class="ingredient-item">
+                <span class="ingredient-dot"></span>
+                <span>Estabilizadores</span>
+              </li>
+              <li class="ingredient-item">
+                <span class="ingredient-dot"></span>
+                <span>Saponificadores naturales</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tech-clean-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            <span>Desarrollado con Tecnología Limpia SPEAL S.A.S.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Sección de Modo de Uso y Dosificación
+       ========================================================================== -->
+  <section class="section-pad section-bg-white" id="modo-de-uso">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">Guía de Aplicación Técnica</span>
+        <h2 class="section-title">Modo de Preparación y Aplicación</h2>
+        <p class="section-lead">
+          Siga paso a paso las pautas técnicas oficiales para garantizar la máxima homogeneidad de la emulsión y eficacia en campo.
+        </p>
+      </div>
+
+      <!-- 4 Pasos de Preparación -->
+      <div class="prep-steps-grid">
+        
+        <div class="step-card">
+          <span class="step-number-badge">Paso 01</span>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <h4>Agitar el Envase</h4>
+          <p>Agite enérgicamente el envase antes de abrir para asegurar la perfecta suspensión de sus componentes oleosos.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number-badge">Paso 02</span>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 3L2 12h3v8h14v-8h3L12 3zm0 5c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3z"/></svg>
+          </div>
+          <h4>Llenar a la Mitad</h4>
+          <p>Llene el tanque o equipo de aplicación hasta la mitad de su capacidad con agua limpia y libre de sedimentos.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number-badge">Paso 03</span>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+          </div>
+          <h4>Agregar Ozoterra</h4>
+          <p>Incorpore la dosis indicada con agitación continua hasta completar el volumen de agua previsto.</p>
+          <span class="dose-highlight">Dosis: 1 L por cada 200 L de agua (5 mL/L)</span>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number-badge">Paso 04</span>
+          <div class="step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+          </div>
+          <h4>Agitación Continua</h4>
+          <p>Mantenga agitación constante durante la mezcla y a lo largo de todo el proceso de aplicación en el campo.</p>
+        </div>
+
+      </div>
+
+      <!-- Recomendaciones de Uso & Cultivos de Aplicación -->
+      <div class="usage-split-grid">
+        
+        <!-- Recomendaciones Oficiales de Uso -->
+        <div class="info-pane-card">
+          <div class="pane-title-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <h4>Recomendaciones de Uso</h4>
+          </div>
+
+          <ul class="recommendations-list">
+            <li class="recom-item">
+              <svg class="recom-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Método de aplicación:</strong> Aplicación foliar o al suelo según la necesidad específica del cultivo y plan técnico.</span>
+            </li>
+            <li class="recom-item">
+              <svg class="recom-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Prueba previa:</strong> Realice una prueba en un área reducida antes de aplicar en la totalidad del lote o cultivo.</span>
+            </li>
+            <li class="recom-item">
+              <svg class="recom-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Dispersión óptima:</strong> Utilice preferiblemente un coadyuvante (no iónico) para una mejor cobertura y dispersión de gota.</span>
+            </li>
+            <li class="recom-item">
+              <svg class="recom-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Mezclas con otros insumos:</strong> No mezclar con otros productos sin realizar pruebas previas de compatibilidad física y química.</span>
+            </li>
+            <li class="recom-item">
+              <svg class="recom-icon" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span><strong>Oportunidad:</strong> Prepare únicamente la cantidad necesaria y utilice la mezcla preparada el mismo día.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cultivos de Aplicación -->
+        <div class="info-pane-card">
+          <div class="pane-title-wrap">
+            <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z"/></svg>
+            <h4>Cultivos de Aplicación</h4>
+          </div>
+
+          <div class="crops-grid-tags">
+            <div class="crop-tag-card">
+              <svg viewBox="0 0 24 24"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z"/></svg>
+              <div>
+                <strong>Hortalizas</strong>
+                <div style="font-size:0.78rem;color:var(--color-gray-medium);">Tomate, cebolla, pimentón...</div>
+              </div>
+            </div>
+
+            <div class="crop-tag-card">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93z"/></svg>
+              <div>
+                <strong>Frutales</strong>
+                <div style="font-size:0.78rem;color:var(--color-gray-medium);">Cítricos, aguacate, plátano...</div>
+              </div>
+            </div>
+
+            <div class="crop-tag-card">
+              <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+              <div>
+                <strong>Granos</strong>
+                <div style="font-size:0.78rem;color:var(--color-gray-medium);">Maíz, soya, arroz, fríjol...</div>
+              </div>
+            </div>
+
+            <div class="crop-tag-card">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+              <div>
+                <strong>Ornamentales</strong>
+                <div style="font-size:0.78rem;color:var(--color-gray-medium);">Flores y follajes de corte</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="crop-tech-advice">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div>
+              <strong>¿Desea recomendaciones específicas para su cultivo?</strong>
+              <div style="margin-top:2px;">Consulte con nuestro equipo técnico de SPEAL S.A.S. para adaptar volúmenes y frecuencias.</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Sección de Presentación del Producto y Ficha Técnica
+       ========================================================================== -->
+  <section class="section-pad section-bg-yellow" id="presentacion">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">Ficha Oficial del Envase</span>
+        <h2 class="section-title">Presentación Comercial del Producto</h2>
+        <p class="section-lead">
+          Conozca todos los detalles técnicos del envase de 250 mL, formulación e información oficial del etiquetado.
+        </p>
+      </div>
+
+      <div class="product-showcase-grid">
+        
+        <!-- Visor Interactivo de Envase y Etiquetas -->
+        <div class="interactive-preview-card">
+          
+          <div class="preview-tabs" role="tablist">
+            <button class="btn-preview-tab active" data-view="bottle-front">Envase Frontal</button>
+            <button class="btn-preview-tab" data-view="bottle-back">Envase Posterior</button>
+            <button class="btn-preview-tab" data-view="label-front">Etiqueta Frontal</button>
+            <button class="btn-preview-tab" data-view="label-back">Etiqueta Técnica</button>
+          </div>
+
+          <div class="preview-display-viewport">
+            <img src="assets/img/ozoterra_bottle_250ml_front.png"
+                 alt="Envase real de OZOTERRA Aceite Vegetal Ozonizado 250 mL"
+                 class="preview-img-active"
+                 id="previewDisplayImg"
+                 title="Haga clic para ampliar en alta definición">
+          </div>
+
+          <div class="preview-hint">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <span>Haga clic sobre la imagen para abrir el visor en alta resolución</span>
+          </div>
+
+        </div>
+
+        <!-- Tabla de Datos Técnicos Oficiales -->
+        <div class="specs-table-card">
+          <h3 class="specs-title">Información General</h3>
+          <p class="specs-subtitle">Especificaciones técnicas certificadas en la etiqueta de OZOTERRA</p>
+
+          <div class="specs-dl">
+            <div class="spec-row">
+              <span class="spec-key">
+                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Tipo de Producto
+              </span>
+              <span class="spec-val">Bioestimulante agrícola</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-key">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+                Formulación
+              </span>
+              <span class="spec-val">Concentrado oleoso</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-key">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                Contenido Neto
+              </span>
+              <span class="spec-val"><strong>250 mL</strong></span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-key">
+                <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/></svg>
+                Condición Comercial
+              </span>
+              <span class="spec-val">
+                <span class="status-badge-evaluation">Muestra de Evaluación</span>
+              </span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-key">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+                Destino Autorizado
+              </span>
+              <span class="spec-val">Uso Exclusivo Agrícola</span>
+            </div>
+
+            <div class="spec-row">
+              <span class="spec-key">
+                <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                Control de Calidad
+              </span>
+              <span class="spec-val">Lote y Vencimiento impresos</span>
+            </div>
+          </div>
+
+          <!-- Información del Fabricante -->
+          <div class="manufacturer-info-box">
+            <div class="mfg-details">
+              <h5>Fabricado por: SPEAL S.A.S.</h5>
+              <p>Water & Air Technology • Villavicencio, Meta - Colombia</p>
+              <p style="margin-top:4px;"><strong>Línea de Servicio al Cliente:</strong> +57 316 878 7885</p>
+            </div>
+            <div class="mfg-origin-pill">
+              <span>🇨🇴 Hecho en Colombia</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Sección de Precauciones y Advertencias
+       ========================================================================== -->
+  <section class="section-pad section-bg-white" id="precauciones">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">Buenas Prácticas de Manejo</span>
+        <h2 class="section-title">Precauciones y Advertencias</h2>
+        <p class="section-lead">
+          Para garantizar la seguridad de los operarios, el entorno y los animales, atienda estrictamente las siguientes medidas estipuladas en la etiqueta oficial.
+        </p>
+      </div>
+
+      <!-- Banner de Alerta Principal -->
+      <div class="precautions-alert-banner">
+        <div class="alert-icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+        </div>
+        <div class="alert-banner-text">
+          <h4>Uso Exclusivo Agrícola • Manejo Responsable</h4>
+          <p>Producto destinado exclusivamente para aplicaciones agrícolas profesionales. No ingerir y mantener fuera del alcance de niños y animales domésticos.</p>
+        </div>
+      </div>
+
+      <!-- Grid de Precauciones -->
+      <div class="precautions-grid">
+        
+        <div class="precaution-card">
+          <div class="prec-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          </div>
+          <div class="prec-body">
+            <h5>Seguridad Infantil y Animal</h5>
+            <p>Mantener permanentemente fuera del alcance de los niños, personas no autorizadas y animales domésticos.</p>
+          </div>
+        </div>
+
+        <div class="precaution-card">
+          <div class="prec-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          </div>
+          <div class="prec-body">
+            <h5>Protección Ocular y Cutánea</h5>
+            <p>Evitar el contacto directo con ojos y piel durante las operaciones de dosificación, mezcla y aspersión.</p>
+          </div>
+        </div>
+
+        <div class="precaution-card">
+          <div class="prec-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>
+          </div>
+          <div class="prec-body">
+            <h5>Elementos de Protección (EPP)</h5>
+            <p>Usar guantes de caucho o nitrilo y gafas protectoras de seguridad durante la manipulación del producto concentrado.</p>
+          </div>
+        </div>
+
+        <div class="precaution-card">
+          <div class="prec-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </div>
+          <div class="prec-body">
+            <h5>Primeros Auxilios</h5>
+            <p>En caso de contacto accidental con ojos o piel, lavar de inmediato la zona afectada con abundante agua limpia.</p>
+          </div>
+        </div>
+
+        <div class="precaution-card">
+          <div class="prec-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+          </div>
+          <div class="prec-body">
+            <h5>Ficha de Datos de Seguridad</h5>
+            <p>Consulte la Ficha de Datos de Seguridad (FDS) para conocer directrices químicas ampliadas de transporte y manejo.</p>
+          </div>
+        </div>
+
+        <div class="precaution-card">
+          <div class="prec-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/></svg>
+          </div>
+          <div class="prec-body">
+            <h5>Almacenamiento Adecuado</h5>
+            <p>Conservar en su envase original bien cerrado, en un lugar fresco, seco y debidamente protegido de la luz solar directa.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Sección de Contacto Comercial y WhatsApp
+       ========================================================================== -->
+  <section class="section-pad section-bg-yellow" id="contacto">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-eyebrow">Atención y Asesoría Técnica</span>
+        <h2 class="section-title">Comuníquese con OZOTERRA</h2>
+        <p class="section-lead">
+          ¿Desea evaluar el producto en sus cultivos o solicitar mayor información técnica? Estamos a su entera disposición.
+        </p>
+      </div>
+
+      <div class="contact-section-grid">
+        
+        <!-- Panel Izquierdo: WhatsApp y Datos Institucionales -->
+        <div class="contact-info-panel">
+          
+          <div class="contact-direct-card">
+            <h3>Canal Prioritario WhatsApp</h3>
+            <p>
+              Atención directa con nuestro equipo comercial y agrónomos en Colombia para cotizaciones, validaciones en campo y asesoría técnica.
+            </p>
+            <a href="https://wa.me/573168787885?text=Hola,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20OZOTERRA%20Aceite%20Vegetal%20Ozonizado." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="wa-featured-btn" 
+               id="btnContactMainWhatsapp">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.73C7 10.96 7.9 12.14 8.02 12.31C8.15 12.47 9.77 15.08 12.32 16.12C14.44 16.99 14.87 16.82 15.33 16.78C15.79 16.73 16.81 16.17 17.02 15.58C17.23 14.99 17.23 14.49 17.16 14.38C17.1 14.28 16.93 14.22 16.68 14.1C16.43 13.97 15.2 13.37 14.97 13.29C14.74 13.2 14.58 13.16 14.41 13.41C14.25 13.66 13.78 14.22 13.64 14.38C13.5 14.54 13.36 14.56 13.11 14.44C12.86 14.31 12.06 14.05 11.11 13.2C10.37 12.54 9.87 11.73 9.73 11.48C9.58 11.23 9.71 11.1 9.84 10.97C9.95 10.86 10.09 10.68 10.21 10.53C10.34 10.39 10.38 10.28 10.46 10.12C10.54 9.95 10.5 9.81 10.44 9.69C10.38 9.56 9.88 8.35 9.67 7.85C9.47 7.37 9.27 7.43 9.12 7.42C8.97 7.42 8.81 7.33 8.53 7.33Z"/>
+              </svg>
+              <span>Chatear por WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="contact-channels-list">
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div class="channel-text">
+                <h5>Servicio al Cliente Oficial</h5>
+                <p>+57 316 878 7885</p>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div class="channel-text">
+                <h5>Sede Corporativa</h5>
+                <p>Villavicencio, Meta – Colombia</p>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.8L18.6 8 12 11.2 5.4 8 12 4.8zM4 9.4l7 3.4v6.8l-7-3.5V9.4zm16 6.7l-7 3.5v-6.8l7-3.4v6.7z"/></svg>
+              </div>
+              <div class="channel-text">
+                <h5>Fabricante Responsable</h5>
+                <p>SPEAL S.A.S. (Water & Air Technology)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Formulario de Contacto -->
+        <div class="contact-form-card">
+          <h3>Envíanos un Mensaje</h3>
+          <p class="form-lead">Diligencie sus datos y responderemos sus requerimientos técnicos y comerciales.</p>
+
+          <form id="contactForm" novalidate>
+            
+            <div class="form-group">
+              <label for="inputName">Nombre Completo <span>*</span></label>
+              <input type="text" id="inputName" class="form-control" placeholder="Ej. Ing. Carlos Rodríguez" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inputCity">Ciudad / Municipio <span>*</span></label>
+              <input type="text" id="inputCity" class="form-control" placeholder="Ej. Villavicencio, Ibagué, Cali..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPhone">Teléfono / Celular <span>*</span></label>
+              <input type="tel" id="inputPhone" class="form-control" placeholder="Ej. 316 123 4567" required>
+            </div>
+
+            <div class="form-group">
+              <label for="inputMessage">Mensaje o Consulta Técnica <span>*</span></label>
+              <textarea id="inputMessage" class="form-control" rows="4" placeholder="Indíquenos el tipo de cultivo de interés, área o inquietudes sobre OZOTERRA..." required></textarea>
+            </div>
+
+            <div class="form-actions-split">
+              <button type="submit" class="btn-form-submit">
+                Registrar Solicitud
+              </button>
+
+              <button type="button" class="btn-form-wa" id="btnFormWa" title="Enviar directamente a WhatsApp">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.73C7 10.96 7.9 12.14 8.02 12.31C8.15 12.47 9.77 15.08 12.32 16.12C14.44 16.99 14.87 16.82 15.33 16.78C15.79 16.73 16.81 16.17 17.02 15.58C17.23 14.99 17.23 14.49 17.16 14.38C17.1 14.28 16.93 14.22 16.68 14.1C16.43 13.97 15.2 13.37 14.97 13.29C14.74 13.2 14.58 13.16 14.41 13.41C14.25 13.66 13.78 14.22 13.64 14.38C13.5 14.54 13.36 14.56 13.11 14.44C12.86 14.31 12.06 14.05 11.11 13.2C10.37 12.54 9.87 11.73 9.73 11.48C9.58 11.23 9.71 11.1 9.84 10.97C9.95 10.86 10.09 10.68 10.21 10.53C10.34 10.39 10.38 10.28 10.46 10.12C10.54 9.95 10.5 9.81 10.44 9.69C10.38 9.56 9.88 8.35 9.67 7.85C9.47 7.37 9.27 7.43 9.12 7.42C8.97 7.42 8.81 7.33 8.53 7.33Z"/>
+                </svg>
+                <span>Enviar por WhatsApp</span>
+              </button>
+            </div>
+
+            <div id="formStatus" class="form-status-msg" role="alert"></div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Corporativo
+       ========================================================================== -->
+  <footer class="footer-corporate">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Columna Marca -->
+        <div class="footer-brand">
+          <h4>OZO<span>TERRA</span></h4>
+          <p>
+            Bioestimulante agrícola formulado a partir de aceites vegetales ozonizados mediante tecnología limpia. Impulsando la productividad y sostenibilidad del agro colombiano.
+          </p>
+          <span class="footer-legal-badge">Muestra de Evaluación • Prohibida su Venta</span>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="footer-col">
+          <h5>Navegación</h5>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#beneficios">Beneficios Comprobados</a></li>
+            <li><a href="#modo-de-uso">Modo de Preparación</a></li>
+            <li><a href="#presentacion">Presentación 250 mL</a></li>
+            <li><a href="#precauciones">Precauciones y Manejo</a></li>
+            <li><a href="#contacto">Contacto Comercial</a></li>
+          </ul>
+        </div>
+
+        <!-- Información Técnica -->
+        <div class="footer-col">
+          <h5>Especificaciones</h5>
+          <ul class="footer-links">
+            <li><span>• Concentrado Oleoso</span></li>
+            <li><span>• Dosis: 5 mL / Litro de agua</span></li>
+            <li><span>• Aplicación Foliar y al Suelo</span></li>
+            <li><span>• Uso Exclusivo Agrícola</span></li>
+            <li><span>• FDS Disponible a solicitud</span></li>
+          </ul>
+        </div>
+
+        <!-- Contacto Corporativo -->
+        <div class="footer-col">
+          <h5>Contacto SPEAL S.A.S.</h5>
+          <ul class="footer-contact-items">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Villavicencio, Meta – Colombia</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <span>Línea / WhatsApp: +57 316 878 7885</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              <span>Water & Air Technology</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Barra de Copyright y Términos Legales -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 <strong>OZOTERRA</strong>. Desarrollado y fabricado por <strong>SPEAL S.A.S.</strong> en Villavicencio, Meta, Colombia. Todos los derechos reservados.
+        </div>
+        <div>
+          <span>Uso Exclusivo Agrícola | Producto en Validación</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Botón Flotante Permanente de WhatsApp
+       ========================================================================== -->
+  <a href="https://wa.me/573168787885?text=Hola,%20solicito%20informaci%C3%B3n%20sobre%20OZOTERRA%20Aceite%20Vegetal%20Ozonizado." 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="wa-float-btn" 
+     id="btnFloatWhatsapp" 
+     aria-label="Contactar a OZOTERRA por WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.59 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67ZM8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.73C7 10.96 7.9 12.14 8.02 12.31C8.15 12.47 9.77 15.08 12.32 16.12C14.44 16.99 14.87 16.82 15.33 16.78C15.79 16.73 16.81 16.17 17.02 15.58C17.23 14.99 17.23 14.49 17.16 14.38C17.1 14.28 16.93 14.22 16.68 14.1C16.43 13.97 15.2 13.37 14.97 13.29C14.74 13.2 14.58 13.16 14.41 13.41C14.25 13.66 13.78 14.22 13.64 14.38C13.5 14.54 13.36 14.56 13.11 14.44C12.86 14.31 12.06 14.05 11.11 13.2C10.37 12.54 9.87 11.73 9.73 11.48C9.58 11.23 9.71 11.1 9.84 10.97C9.95 10.86 10.09 10.68 10.21 10.53C10.34 10.39 10.38 10.28 10.46 10.12C10.54 9.95 10.5 9.81 10.44 9.69C10.38 9.56 9.88 8.35 9.67 7.85C9.47 7.37 9.27 7.43 9.12 7.42C8.97 7.42 8.81 7.33 8.53 7.33Z"/>
+    </svg>
+    <span class="wa-float-tooltip">¿Consultas? Chatea con nosotros</span>
+  </a>
+
+  <!-- ==========================================================================
+       Modal de Zoom en Alta Definición para Etiquetas y Envase
+       ========================================================================== -->
+  <div class="modal-overlay" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h4 id="modalTitle">Visualizador de Etiqueta</h4>
+        <button class="modal-close-btn" id="modalClose" aria-label="Cerrar modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="" alt="Vista detallada" class="modal-img-full" id="modalImg">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
